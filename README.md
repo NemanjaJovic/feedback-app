@@ -1,8 +1,8 @@
-## React Feedback App
+# React Feedback App
 
 This is my first React project. It allows users to add, update and delete feedback. It uses a mock REST api with json-server.
 
-## Usage
+# Usage
 
 ### Install dependencies
 
