@@ -1,7 +1,7 @@
 function App() {
   return (
     <div className='container'>
-      <h1>Test from App</h1>
+      <h1>Another test</h1>
     </div>
   )
 }
