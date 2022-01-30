@@ -1,11 +1,19 @@
-This project was bootstrapped with Create React App.
+## React Feedback App
 
-## After cloning this repository
+This is my first React project. It allows users to add, update and delete feedback. It uses a mock REST api with json-server.
 
-Run NPM INSTALL in the project directory to install all dev dependencies so you can test this localy.
+## Usage
 
-## About this app
+### Install dependencies
 
-This is my first react application and it will be about Users feedback.
-Users will be able to leave a feedback on a certain topic.
-This is not a full application, it is just a segment of a bigger application on which I will be working later.
+```
+npm install
+```
+
+### Run
+
+```
+npm run dev
+```
+
+This will run JSON-server on port :5000 and React on port :3000
