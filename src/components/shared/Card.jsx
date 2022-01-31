@@ -4,7 +4,6 @@ function Card({ children, reverse }) {
   //Conditional className
 
   // return <div className={`card ${reverse ? 'reverse' : null}`}>{children}</div>
-
   return (
     // Conditional inline CSS
     <div
@@ -20,7 +19,7 @@ function Card({ children, reverse }) {
 }
 
 Card.defaultProps = {
-  reverse: false,
+  reverse: true,
 }
 
 Card.propTypes = {
