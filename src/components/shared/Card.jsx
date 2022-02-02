@@ -1,9 +1,7 @@
 import PropTypes from 'prop-types'
+import { useState } from 'react'
 
 function Card({ children, reverse }) {
-  //Conditional className
-
-  // return <div className={`card ${reverse ? 'reverse' : null}`}>{children}</div>
   return (
     // Conditional inline CSS
     <div
@@ -19,7 +17,7 @@ function Card({ children, reverse }) {
 }
 
 Card.defaultProps = {
-  reverse: true,
+  reverse: false,
 }
 
 Card.propTypes = {
