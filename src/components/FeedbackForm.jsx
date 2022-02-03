@@ -2,8 +2,12 @@ import { useState } from 'react'
 import RatingSelect from './RatingSelect'
 import Card from './shared/Card'
 import Button from './shared/Button'
+import { useContext } from 'react'
+import FeedbackContext from '../context/FeedbackContext'
 
-function FeedbackForm({ handleAdd }) {
+function FeedbackForm() {
+  const { addFeedback } = useContext(FeedbackContext)
+
   const [text, setText] = useState('')
   const [rating, setRating] = useState(10)
   const [btnDisabled, setBtnDisabled] = useState(true)
@@ -32,7 +36,7 @@ function FeedbackForm({ handleAdd }) {
         rating: rating,
       }
 
-      handleAdd(newFeedback)
+      addFeedback(newFeedback)
       setText('')
     }
   }
